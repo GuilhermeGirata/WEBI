@@ -1,0 +1,81 @@
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      width: 100%;
+      position: fixed;
+      padding: 10px;
+    }
+  
+    li {
+      float: left;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    .leftbox {
+      float: left;
+      width: 70%;
+      padding: 79px;
+      height: 100%;
+      background-color: #ccffff;
+    }
+    .rightbox {
+      float: left;
+      width: 30%;
+      padding: 68px;
+      height: 100%;
+      padding-top: 200px;
+      background-color: #e6ffff;
+    }
+  
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+  
+    p{
+      font-size: 25px;
+    }
+  
+    h1{
+      text-align:center;
+      font-size: 70px;
+    }
+  
+    h2{
+      text-align:center;
+      font-size: 40px;
+    }

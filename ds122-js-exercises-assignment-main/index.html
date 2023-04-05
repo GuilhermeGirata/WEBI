@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- TODO: Trocar o nome do arquivo abaixo! -->
+  <script src="js/arquivo.js"></script>
+</head>
+
+<body>
+  <script>
+    var hashtag = "#"
+
+    for (var i = 0; i < 7; i++) {
+        console.log(hashtag);
+        hashtag += "#"
+    }
+  </script>
+  <script>
+    var n = 10;
+    var i = 0;
+    var str = "";
+
+    var nn = n*n;
+    var c = " ";
+    for(i=0;i<nn;i++){
+        str +=c;
+        if(i % n === 0){
+            str += "/n";
+        }
+        else{
+            if(c === " "){
+                c = "#";
+            }
+            else{
+                c = " ";
+            }
+        }
+    }
+
+    console.log(c+n);
+  </script>
+  <script>
+    var array = [1,2,3];
+    var soma = arr.reduce(function(soma, i) {
+        return soma + i;
+    });
+
+    console.log(soma);
+  </script>
+  <script>
+    var myArray = [1,2,3];
+    myArray.reverse();
+
+    console.log(myArray)
+  </script>
+  <script>
+      var frase = "Aula de web1";
+      var letra = "e";
+      var quantidade = 0
+
+      for (var i = 0; i < frase.length; i++) {
+        if (frase[i] == letra) {
+          quantidade++
+        }
+      }
+
+      console.log(quantidade)
+  </script>
+</body>
+</html>

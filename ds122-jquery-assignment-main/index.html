@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The insertBefore() Method</h2>
+
+<input id="input" type="text" placeholder="Nova Tarefa">
+<button type="submit" id="button">Adicionar</button>
+
+<ul id="myList1">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+<ul id="myList2">
+  <li>Water</li>
+  <li>Milk</li>
+  <li>Juice</li>
+</ul>
+
+<p>Click the button to move items from one list to another:</p>
+
+<button onclick="insert()">Try it</button>
+
+<script>
+    
+$( "button" ).click(function() {
+    var text = $( this ).text();
+    $( "input" ).val( text );
+    return text
+});
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#myList1").append('<li><a href="#">',text,'</a></li>');
+    });
+});
+
+
+function insert() {
+  const node = document.getElementById("myList1").lastElementChild;
+  const list = document.getElementById("myList2");
+  list.insertBefore(node, null);
+}
+
+</script>
+</body>
+</html>
